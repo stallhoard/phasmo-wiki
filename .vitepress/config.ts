@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  srcDir: '.',
   title: 'Fastmophobia',
   description: 'The actual reliable and advanced info.',
   base: '/phasmo-wiki/',
