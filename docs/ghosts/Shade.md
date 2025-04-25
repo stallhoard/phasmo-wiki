@@ -48,5 +48,5 @@
 ## Ghost event preferences
 
 - Can't do singing events
-- 2/3 (67%) chance to choose airball
+- 40% chance to choose airball
 - 2/3 (67%) chance to enter shadow form if manifested
