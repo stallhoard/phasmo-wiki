@@ -2,7 +2,7 @@
 layout: home
 title: Fastmophobia
 hero:
-  name: Fastmophobia
+  name: <h1 class="rainbow-text">Fastmophobia</h1>
   text: The actual reliable and advanced info.
   tagline: Be in top 1% of players.
 features:
