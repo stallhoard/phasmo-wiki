@@ -1,18 +1,19 @@
-name: Deploy VitePress
+name: Deploy VitePress Site
 
 on:
   push:
     branches:
-      - main  # or 'master', depends on your default
+      - main 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout the repo
         uses: actions/checkout@v3
 
-      - name: Set up Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -20,11 +21,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build VitePress site
-        run: npm run docs:build  # or 'vitepress build docs' depending on your setup
+      - name: Build the VitePress site
+        run: npm run docs:build  # or vitepress build if you’re not using scripts
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./docs/.vitepress/dist
+          publish_branch: gh-pages
