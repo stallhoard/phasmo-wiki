@@ -1,32 +1,32 @@
 <div class="link-container">
   <div class="column">
-    <a href="/ghosts/Spirit/">Spirit</a>
-    <a href="/ghosts/Poltergeist/">Poltergeist</a>
-    <a href="/ghosts/Mare/">Mare</a>
-    <a href="/ghosts/Demon/">Demon</a>
-    <a href="/ghosts/Yokai/">Yokai</a>
-    <a href="/ghosts/Myling/">Myling</a>
-    <a href="/ghosts/Raiju/">Raiju</a>
-    <a href="/ghosts/Moroi/">Moroi</a>
+    <a href="/phasmo-wiki/ghosts/Spirit/">Spirit</a>
+    <a href="/phasmo-wiki/ghosts/Poltergeist/">Poltergeist</a>
+    <a href="/phasmo-wiki/ghosts/Mare/">Mare</a>
+    <a href="/phasmo-wiki/ghosts/Demon/">Demon</a>
+    <a href="/phasmo-wiki/ghosts/Yokai/">Yokai</a>
+    <a href="/phasmo-wiki/ghosts/Myling/">Myling</a>
+    <a href="/phasmo-wiki/ghosts/Raiju/">Raiju</a>
+    <a href="/phasmo-wiki/ghosts/Moroi/">Moroi</a>
   </div>
   <div class="column">
-    <a href="/ghosts/Wraith/">Wraith</a>
-    <a href="/ghosts/Banshee/">Banshee</a>
-    <a href="/ghosts/Revenant/">Revenant</a>
-    <a href="/ghosts/Yurei/">Yurei</a>
-    <a href="/ghosts/Hantu/">Hantu</a>
-    <a href="/ghosts/Onryo/">Onryo</a>
-    <a href="/ghosts/Obake/">Obake</a>
-    <a href="/ghosts/Deogen/">Deogen</a>
+    <a href="/phasmo-wiki/ghosts/Wraith/">Wraith</a>
+    <a href="/phasmo-wiki/ghosts/Banshee/">Banshee</a>
+    <a href="/phasmo-wiki/ghosts/Revenant/">Revenant</a>
+    <a href="/phasmo-wiki/ghosts/Yurei/">Yurei</a>
+    <a href="/phasmo-wiki/ghosts/Hantu/">Hantu</a>
+    <a href="/phasmo-wiki/ghosts/Onryo/">Onryo</a>
+    <a href="/phasmo-wiki/ghosts/Obake/">Obake</a>
+    <a href="/phasmo-wiki/ghosts/Deogen/">Deogen</a>
   </div>
   <div class="column">
-    <a href="/ghosts/Phantom/">Phantom</a>
-    <a href="/ghosts/Jinn/">Jinn</a>
-    <a href="/ghosts/Shade/">Shade</a>
-    <a href="/ghosts/Oni/">Oni</a>
-    <a href="/ghosts/Goryo/">Goryo</a>
-    <a href="/ghosts/The Twins/">The Twins</a>
-    <a href="/ghosts/The Mimic/">The Mimic</a>
-    <a href="/ghosts/Thaye/">Thaye</a>
+    <a href="/phasmo-wiki/ghosts/Phantom/">Phantom</a>
+    <a href="/phasmo-wiki/ghosts/Jinn/">Jinn</a>
+    <a href="/phasmo-wiki/ghosts/Shade/">Shade</a>
+    <a href="/phasmo-wiki/ghosts/Oni/">Oni</a>
+    <a href="/phasmo-wiki/ghosts/Goryo/">Goryo</a>
+    <a href="/phasmo-wiki/ghosts/The Twins/">The Twins</a>
+    <a href="/phasmo-wiki/ghosts/The Mimic/">The Mimic</a>
+    <a href="/phasmo-wiki/ghosts/Thaye/">Thaye</a>
   </div>
 </div>
