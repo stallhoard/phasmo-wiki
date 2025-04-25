@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Fastmophobia',
   description: 'The actual reliable and advanced info.',
-  base: '/phasmo-wiki/', // Add this line for GitHub Pages
+  base: '/phasmo-wiki/',
   themeConfig: {
     logo: '/logo.png',
     siteTitle: 'Fastmophobia',

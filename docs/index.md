@@ -2,9 +2,16 @@
 layout: home
 title: Fastmophobia
 hero:
-  name: <span class="rainbow-text">Fastmophobia Documentation</span>
+  name: Fastmophobia
   text: The actual reliable and advanced info.
   tagline: Be in top 1% of players.
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /ghosts/
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/your-username/fastmophobia
 features:
   - icon: 👻
     title: Ghosts
