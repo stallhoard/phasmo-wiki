@@ -3,7 +3,7 @@ The ghost is a complex system, and not everything about its behavior will immedi
 
 ## Ghost
 - [States](/mechanics/states/)
-- [Activity](/mechanics/activity/)
+- [Activity](/mechanics/Activity.md)
 
 ## Environment
 - [Weather and temperature](/mechanics/Temperature.md)
