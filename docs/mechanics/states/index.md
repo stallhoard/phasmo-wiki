@@ -5,26 +5,26 @@ Ghosts in Phasmophobia have different states. A state is a phase that determines
 - Ghosts can decide what to do next only after exiting idle state
 - Ghosts enter specific states when performing certain actions. For example, wandering triggers the Wander state, while throwing an object triggers the Throw state. To be precise, it is the state that triggers the action, not the other way around.
 ## Main states
-- [Idle](/states/IdleState)
-- [Favourite Room](/states/FavRoomState)
-- [Wander](/states/WanderState)
-- [Hunting](/states/HuntingState)
-- [Event](/states/EventState)
-- [FuseBox](/states/FuseBoxState)
-- [GhostAbility](/states/GhostAbilityState)
-- [Power](/states/PowerState)
+- [Idle](/states/IdleState.md)
+- [Favourite Room](/states/FavRoomState.md)
+- [Wander](/states/WanderState.md)
+- [Hunting](/states/HuntingState.md)
+- [Event](/states/EventState.md)
+- [FuseBox](/states/FuseBoxState.md)
+- [GhostAbility](/states/GhostAbilityState.md)
+- [Power](/states/PowerState.md)
 
 ## Other states
 - Door
-- [Light](/states/LightState)
-- [Throwing](/states/ThrowingState)
-- [Ignite](/states/IgniteState)
+- [Light](/states/LightState.md)
+- [Throwing](/states/ThrowingState.md)
+- [Ignite](/states/IgniteState.md)
 - Sink
 - CCTV
 - Car Alarm
 - Radio
-- [Painting](/states/PaintingState)
-- [Mannequin](/states/MannequinState)
+- [Painting](/states/PaintingState.md)
+- [Mannequin](/states/MannequinState.md)
 - Window Knock
 
 and other ones..

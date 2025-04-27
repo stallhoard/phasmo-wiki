@@ -6,5 +6,5 @@ The ghost is a complex system, and not everything about its behavior will immedi
 - [Activity](/mechanics/activity/)
 
 ## Environment
-- [Weather and temperature](mechanics/Temperature)
-- [Fire source](/mechanics/FireSource)
+- [Weather and temperature](/mechanics/Temperature.md)
+- [Fire source](/mechanics/FireSource.md)
