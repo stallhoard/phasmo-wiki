@@ -18,8 +18,8 @@ export default defineConfig({
       '/ghosts/': [
         {
           text: 'Ghost Types',
+          link: '/ghosts/',
           items: [
-            { text: 'Overview', link: '/ghosts/' },
             { text: 'Spirit', link: '/ghosts/Spirit' },
             { text: 'Wraith', link: '/ghosts/Wraith' },
             { text: 'Phantom', link: '/ghosts/Phantom' },
@@ -43,15 +43,15 @@ export default defineConfig({
       ],
       '/equipment/': [
         {
-          text: 'Equipment Guide',
-          items: [{ text: 'Overview', link: '/equipment/' }],
+          text: 'Equipment',
+          link: '/equipment/',
         },
       ],
       '/mechanics/': [
         {
           text: 'Advanced Mechanics',
+          link: '/mechanics/',
           items: [
-            { text: 'Overview', link: '/mechanics/' },
             {
               text: 'States',
               collapsed: true,
