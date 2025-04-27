@@ -50,7 +50,32 @@ export default defineConfig({
       '/mechanics/': [
         {
           text: 'Advanced Mechanics',
-          items: [{ text: 'Overview', link: '/mechanics/' }],
+          items: [
+            { text: 'Overview', link: '/mechanics/' },
+            {
+              text: 'States',
+              collapsed: true,
+              link: '/mechanics/states/',
+              items: [
+                { text: 'Idle', link: '/mechanics/states/IdleState' },
+                { text: 'Favourite Room', link: '/mechanics/states/FavRoomState' },
+                { text: 'Wander', link: '/mechanics/states/WanderState' },
+                { text: 'Hunting', link: '/mechanics/states/HuntingState' },
+                { text: 'Event', link: '/mechanics/states/EventState' },
+                { text: 'FuseBox', link: '/mechanics/states/FuseBoxState' },
+                { text: 'GhostAbility', link: '/mechanics/states/GhostAbilityState' },
+                { text: 'Power', link: '/mechanics/states/PowerState' },
+                { text: 'Light', link: '/mechanics/states/LightState' },
+                { text: 'Throwing', link: '/mechanics/states/ThrowingState' },
+                { text: 'Ignite', link: '/mechanics/states/IgniteState' },
+                { text: 'Painting', link: '/mechanics/states/PaintingState' },
+                { text: 'Mannequin', link: '/mechanics/states/MannequinState' },
+              ],
+            },
+            { text: 'Activity', link: '/mechanics/Activity'},
+            { text: 'Weather and temperature', link: '/mechanics/Temperature'},
+            { text: 'Fire source', link: '/mechanics/FireSource'},
+          ],
         },
       ],
     },
