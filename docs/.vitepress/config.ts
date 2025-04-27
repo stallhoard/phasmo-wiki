@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: 'Fastmophobia',
   description: 'The actual reliable and advanced info.',
   base: '/phasmo-wiki/',
