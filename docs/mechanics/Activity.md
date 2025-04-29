@@ -7,16 +7,9 @@ import Calculator from '../.vitepress/theme/components/Calculator.vue'
 Calculate ghost activity probabilities based on activity level and setting.
 - Activity = averageInsanity + ghost's unique modifiers + incense modifier + 15 (if solo)
 
------
-
-- Activity setting: High = 130
-- Activity setting: Medium = 115
-- Activity setting: Low = 100
-
-
 <Calculator />
 
 ::: warning NOTE
-- For every ghost except Goryo
+- For every ghost except Goryo/Shade
 - Tower card/Activity wish is not considered
 :::
