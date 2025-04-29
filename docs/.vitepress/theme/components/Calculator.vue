@@ -16,7 +16,6 @@
   <button @click="calculate">Calculate</button>
 
   <div v-if="calculated" class="results">
-    <p><strong>X:</strong> {{ x.toFixed(3) }}</p>
     <ul>
       <li><strong>Interact Chance:</strong> {{ (interact * 100).toFixed(2) }}%</li>
       <li><strong>Wander Chance:</strong> {{ (wander * 100).toFixed(2) }}%</li>
@@ -111,12 +110,16 @@ button {
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: background-color 0.5s, color 0.5s, outline 0.0s;
 }
 
 button:hover {
-  background-color: var(--vp-c-brand-dark);
+  background-color: transparent;
+  color: var(--vp-c-brand);
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
 }
+
 
 .results {
   padding-top: 1rem;
