@@ -40,7 +40,7 @@
 
 ## Ability (pseudo)
 
-- If a player turns on a light that is within 4 metres of a Mare, it has a 1/8 (12.5%) chance of turning the light off almost immediately (delay up to 1 second)
+- If a player turns on a light that is within 4 metres of a Mare, it has a 1/7 (~14%) chance of turning the light off almost immediately (delay 0.05 - 1s)
 
 ## Sanity threshold
 
@@ -57,11 +57,15 @@ Can't turn on TVs and computer monitors
 
 ## Roaming
 
-- Chance for long roam increases if the room's main light's position is "On"
+- 50% for long roam if the room's main light's position is "On"
+
+More: [Wander State](/mechanics/states/WanderState)
 
 ## Ghost event preferences
 
-- Mare has 1/6 (16.7%) chance to choose light-breaking event
+- Mare has 1/9 (11%) chance to choose light-breaking event
+
+More: [Event State](/mechanics/states/EventState)
 
 ## Link to shattered lights
 

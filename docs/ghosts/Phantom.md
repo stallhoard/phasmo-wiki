@@ -40,7 +40,7 @@
 
 ## Ability (power)
 
-- Can wander to a random player within a **5-meter** radius sphere _anywhere_ on the map, leaving EMF 2 at the level of ghost's head
+- Can wander to a random player within a **1 - 5m** radius sphere _anywhere_ on the map, leaving EMF 2 at the level of ghost's head
 
 ## Sanity drain
 
