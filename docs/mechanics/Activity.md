@@ -2,10 +2,12 @@
 import Calculator from '../.vitepress/theme/components/Calculator.vue'
 </script>
 
-## Ghost Activity Calculator
+
+
+## Action probabilities
 
 Calculate ghost activity probabilities based on activity level and setting.
-- Activity = averageInsanity + ghost's unique modifiers + incense modifier + 15 (if solo)
+- Activity = (100 - averageSanity) + other modifiers (described above)
 
 <Calculator />
 

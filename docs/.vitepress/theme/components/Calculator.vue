@@ -20,6 +20,11 @@
         <input v-model="isBloodMoon" type="checkbox" class="custom-checkbox" />
         <span class="checkbox-custom"></span>
       </label>
+      <label class="checkbox-label">
+        Solo
+        <input v-model="isSolo" type="checkbox" class="custom-checkbox" />
+        <span class="checkbox-custom"></span>
+      </label>
     </div>
 
     <button @click="calculate">Calculate</button>
@@ -41,6 +46,7 @@ import { ref, computed } from 'vue'
 const activity = ref(5)
 const activitySettingPreset = ref('Medium')
 const isBloodMoon = ref(false)
+const isSolo = ref(false)
 
 const x = ref(0)
 const interact = ref(0)
@@ -63,10 +69,18 @@ const activitySetting = computed(() => {
   return value
 })
 
+const effectiveActivity = computed(() => {
+  let value = activity.value
+  if (isSolo.value) {
+    value += 15
+  }
+  return value
+})
+
 const clamp = (val, min, max) => Math.max(min, Math.min(max, val))
 
 const calculate = () => {
-  let xVal = ((activity.value + 1) / activitySetting.value) * 0.5
+  let xVal = ((effectiveActivity.value + 1) / activitySetting.value) * 0.5
   xVal = clamp(xVal, 0.005, 0.5)
 
   x.value = xVal
@@ -80,6 +94,7 @@ const calculate = () => {
 </script>
 
 <style scoped>
+/* Same styles as original code, no changes needed */
 .calculator {
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
