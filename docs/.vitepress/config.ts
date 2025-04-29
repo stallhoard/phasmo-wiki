@@ -84,4 +84,11 @@ export default defineConfig({
     },
   },
   appearance: 'dark',
+    vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: () => false,
+      },
+    },
+  },
 });
