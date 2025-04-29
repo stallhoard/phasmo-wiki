@@ -5,6 +5,9 @@ import Calculator from '../.vitepress/theme/components/Calculator.vue'
 ## Overview
 Ghost's activity directly affects the chances of ghost doing "useful" actions and "useless" ones. Activity can be changed in certain ways:
 
+## Solo modifier
+If you play singleplayer lobby, or multiplayer lobby alone, then the game will add `+15` to the activity value
+
 ## Sanity
 Losing sanity **significantly** increases ghost's activity, the formula is ```(100 - averageSanity)```
 

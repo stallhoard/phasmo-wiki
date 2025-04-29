@@ -25,6 +25,11 @@
         <input v-model="isSolo" type="checkbox" class="custom-checkbox" />
         <span class="checkbox-custom"></span>
       </label>
+      <label class="checkbox-label">
+        Oni/Yokai Modifier
+        <input v-model="isOniYokai" type="checkbox" class="custom-checkbox" />
+        <span class="checkbox-custom"></span>
+      </label>
     </div>
 
     <button @click="calculate">Calculate</button>
@@ -47,6 +52,7 @@ const activity = ref(5)
 const activitySettingPreset = ref('Medium')
 const isBloodMoon = ref(false)
 const isSolo = ref(false)
+const isOniYokai = ref(false) // New reactive variable for Oni/Yokai modifier
 
 const x = ref(0)
 const interact = ref(0)
@@ -74,6 +80,9 @@ const effectiveActivity = computed(() => {
   if (isSolo.value) {
     value += 15
   }
+  if (isOniYokai.value) {
+    value += 30 // Add +30 for Oni/Yokai modifier
+  }
   return value
 })
 
@@ -94,7 +103,7 @@ const calculate = () => {
 </script>
 
 <style scoped>
-/* Same styles as original code, no changes needed */
+/* No changes needed in the styles */
 .calculator {
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
