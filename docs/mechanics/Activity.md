@@ -9,9 +9,10 @@ Calculate ghost activity probabilities based on activity level and setting.
 
 -----
 
-- Activity setting: High = 100
+- Activity setting: High = 130
 - Activity setting: Medium = 115
 - Activity setting: Low = 100
+
 
 <Calculator />
 
