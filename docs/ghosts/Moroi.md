@@ -1,9 +1,9 @@
-<div class="spirit-container">
-  <img src="/images/Spirit_Discovered.webp" alt="Spirit Ghost" class="spirit-image" />
+<div class="wraith-container">
+  <img src="/images/Moroi_Discovered.webp" alt="Wraith Ghost" class="wraith-image" />
 </div>
 
 <style>
-.spirit-container {
+.wraith-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-.spirit-container::before {
+.wraith-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -24,7 +24,7 @@
   z-index: 2;
 }
 
-.spirit-image {
+.wraith-image {
   max-width: 400px;
   width: 100%;
   height: auto;
@@ -32,14 +32,15 @@
   transition: all 0.3s ease;
 }
 
-.spirit-image:hover {
+.wraith-image:hover {
   filter: brightness(1) contrast(1.2);
   transform: scale(1.02);
 }
 </style>
-## Tell
-Can't enter [Hunting State](/mechanics/states/HuntingState.md) 180 seconds under incense effect
 
-## Identification
+## Ability (pseudo)
+- Getting response from spirit box doubles sanity drain until sanity meds are used
+- Firelights *decrease* sanity drain
 
-- Use incense near the ghost, start a timer and wait for around 160 seconds and then use incense near the ghost again. If the ghost starts a hunt shortly after, it's a Spirit
+## Mechanics
+- Incense blind duration is 7 seconds

@@ -1,5 +1,5 @@
 <div class="wraith-container">
-  <img src="/images/Yurei_Discovered.webp" alt="Wraith Ghost" class="wraith-image" />
+  <img src="/images/The_Mimic_Discovered.webp" alt="Wraith Ghost" class="wraith-image" />
 </div>
 
 <style>
@@ -38,5 +38,12 @@
 }
 </style>
 
-## Mechanics
-- The only ghost that is able to do double touch (less than 0.5s delay) and close door fully
+## Ability (pseudo)
+- Changes ghost type every 30 - 120 seconds, the timer is **always 60 seconds** at the start of the game
+- Always has ghost orbs
+- Chooses random age if copies Thaye
+
+## Desync
+- Non-host can't see Hantu's breath, Obake's shapeshifting, Phantom's/Oni's/Deogen's blinking
+- Incense blind duration is 5 seconds for Mimic-Moroi
+- Mimic-Raiju causes heartbeat at 10m distance instead of the usual 15m (Raiju)

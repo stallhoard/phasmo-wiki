@@ -1,5 +1,5 @@
 <div class="wraith-container">
-  <img src="/images/Yurei_Discovered.webp" alt="Wraith Ghost" class="wraith-image" />
+  <img src="/images/Thaye_Discovered.webp" alt="Wraith Ghost" class="wraith-image" />
 </div>
 
 <style>
@@ -38,5 +38,15 @@
 }
 </style>
 
-## Mechanics
-- The only ghost that is able to do double touch (less than 0.5s delay) and close door fully
+## Ability (pseudo)
+- Attempts aging every 60 - 120 seconds, the timer is **always 60 seconds** at the start of the game
+- Aging decreases ghost activity, event chances, hunt threshold, speed
+
+## Speed
+- 2.75m/s at the age 0, 1.0 m/s at the age 10, -0.175m/s per age, no LOS acceleration
+
+## Hunt threshold
+- **<** 75% at the age 0, **<** 15% at the age 10, -6% per age
+
+## Activity modifier
+- 200% at the age 0, 50% at the age 10, -15% per age (absolute)
