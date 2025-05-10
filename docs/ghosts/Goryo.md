@@ -41,3 +41,5 @@
 ## Mechanics
 - Can't perform long roams
 - In general has less chance for [Wander State](/mechanics/states/WanderState.md), more chance for interactions and [Favourite Room State](/mechanics/states/FavRoomState.md)
+
+More: [Activity](/mechanics/Activity.md)

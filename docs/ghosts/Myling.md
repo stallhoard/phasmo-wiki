@@ -38,7 +38,7 @@
 }
 </style>
 
-## Mechanics
+## Hunting state
 - Completely silent if at the distance greater than 12m from the ghost
 - Quieter in general
 

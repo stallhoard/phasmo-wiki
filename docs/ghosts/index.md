@@ -25,8 +25,8 @@
     <a href="/phasmo-wiki/ghosts/Shade/">Shade</a>
     <a href="/phasmo-wiki/ghosts/Oni/">Oni</a>
     <a href="/phasmo-wiki/ghosts/Goryo/">Goryo</a>
-    <a href="/phasmo-wiki/ghosts/The Twins/">The Twins</a>
-    <a href="/phasmo-wiki/ghosts/The Mimic/">The Mimic</a>
+    <a href="/phasmo-wiki/ghosts/Twins/">The Twins</a>
+    <a href="/phasmo-wiki/ghosts/Mimic/">The Mimic</a>
     <a href="/phasmo-wiki/ghosts/Thaye/">Thaye</a>
   </div>
 </div>

@@ -39,4 +39,4 @@
 </style>
 
 ## Mechanics
-- The only ghost that is able to do double touch (less than 0.5s delay) and close door fully
+- The only ghost that is able to do **double touch** with almost no delay and close door fully

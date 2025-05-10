@@ -43,7 +43,10 @@
 
 ## Mechanics
 - Flames prevent hunt attempts in 4m range
-- Dead players increase the chance for Onryo to blow out flames (continue...)
+- Dead players increase the chance for Onryo to blow out flames
+
+
+More: [Fire source](/mechanics/FireSource.md)
 
 ## Hunt threshold
 - 40% if within 4m of any active flame, 60% otherwise

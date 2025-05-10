@@ -41,5 +41,7 @@
 ## Mechanics
 - `+30` activity modifier if at least one player is within 6 meters of the ghost or in the same room
 
+More: [Activity](/mechanics/Activity.md)
+
 ## Ghost event preferences
-- 40% chance to do walking events, 60% if forced
+- 40% chance to do walking events, 60% if forced by The Devil

@@ -40,4 +40,4 @@
 
 ## Speed
 
-- When reverting to roaming mode, the Revenant's speed will slowly decrease over ~2.7 seconds (deceleration rate of 0.75 m/s²) back to its initial value of 1 m/s
+- If `playerToChase` and `playerToCheck` are both null, the Revenant's speed will slowly decrease over ~2.7 seconds (deceleration rate of 0.75 m/s²) back to its initial value of 1 m/s

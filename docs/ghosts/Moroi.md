@@ -39,8 +39,8 @@
 </style>
 
 ## Ability (pseudo)
-- Getting response from spirit box doubles sanity drain until sanity meds are used
+- Getting response from spirit box or whisper/step from parabolic microphone doubles sanity drain unless sanity meds are used
 - Firelights *decrease* sanity drain
 
-## Mechanics
+## Hunting state
 - Incense blind duration is 7 seconds

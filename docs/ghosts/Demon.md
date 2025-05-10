@@ -38,4 +38,7 @@
 }
 </style>
 
-## No significant info
+## Ability (power)
+- Starts a hunt if conditions are met
+
+More: [Hunting](HuntingState)

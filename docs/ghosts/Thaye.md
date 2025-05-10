@@ -50,3 +50,6 @@
 
 ## Activity modifier
 - 200% at the age 0, 50% at the age 10, -15% per age (absolute)
+
+
+More: [Activity](/mechanics/Activity.md)

@@ -49,5 +49,5 @@ Everytime the ghost tries to interact there is:
 - 50% chance to start a hunt from last extended interaction place (random point in 2m radius sphere), 1.9m/s speed
 
 ## Extended interaction range
-- 12m x 12m interaction box with the ghost in the center on small maps
-- 24m x 24m interaction box with the ghost in the center on medium/large maps
+- 12m x 12m interaction box with the ghost in the center on small/medium maps
+- 24m x 24m interaction box with the ghost in the center on large maps
