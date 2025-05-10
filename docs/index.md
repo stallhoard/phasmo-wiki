@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Fastmophobia
+title: Docs
 hero:
-  name: <span class="rainbow-text">Fastmophobia Documentation</span>
+  name: <span class="rainbow-text">Advanced Documentation</span>
   text: The actual reliable and advanced info.
   tagline: Be in top 1% of players.
 features:

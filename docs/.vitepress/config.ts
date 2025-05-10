@@ -2,12 +2,12 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   ignoreDeadLinks: true,
-  title: 'Fastmophobia',
+  title: 'Docs',
   description: 'The actual reliable and advanced info.',
   base: '/phasmo-wiki/',
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: 'Fastmophobia',
+    siteTitle: 'Docs',
     nav: [
       { text: '🏠 Home', link: '/' },
       { text: '👻 Ghosts', link: '/ghosts/' },
