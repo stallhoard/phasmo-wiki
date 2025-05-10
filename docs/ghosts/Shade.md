@@ -40,7 +40,7 @@
 
 ## Mechanics
 
-- Can't interact with an enviroment in _any_ way (this includes fuse box, ghost event, firelights, writing book) if there is at least one player is in the same room as Shade
+- Can't interact with an enviroment in _any_ way (this includes fuse box, ghost event, firelights, writing book) if there is at least one player in the same room as Shade
   :::tip NOTE
   This applies for hunts too, specifically firelights
   :::

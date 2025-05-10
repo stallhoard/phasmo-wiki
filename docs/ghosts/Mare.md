@@ -57,13 +57,14 @@ Can't turn on TVs and computer monitors
 
 ## Roaming
 
-- 50% for long roam if the room's main light's position is "On"
+- 50% for long roam, 50% for short roam if the room's main light's position is "On"
+- Otherwise, default roaming
 
 More: [Wander State](/mechanics/states/WanderState)
 
 ## Ghost event preferences
 
-- Mare has 1/9 (11%) chance to choose light-breaking event
+- Mare has ~13.8% chance to choose light-breaking event
 
 More: [Event State](/mechanics/states/EventState)
 

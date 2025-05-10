@@ -43,4 +43,4 @@
 - Quieter in general
 
 ## Whispers
-- Every 10 - 30 seconds there is a 50% chance to get a ghost whisper
+- Every 15 - 30 seconds there is a 50% chance to get a ghost whisper

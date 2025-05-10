@@ -51,4 +51,5 @@
 ## Sanity threshold
 - *Always* based on target's sanity, threshold is 50%
 
-## Target selection
+## Ghost event preferences
+- 50% chance to choose singing event
