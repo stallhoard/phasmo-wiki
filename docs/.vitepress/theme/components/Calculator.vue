@@ -81,9 +81,9 @@ const effectiveActivity = computed(() => {
     value += 15
   }
   if (isOniYokai.value) {
-    value += 30 // Add +30 for Oni/Yokai modifier
+    value += 30
   }
-  return value
+  return clamp(value, 1, 100) // Clamp activity to max 100
 })
 
 const clamp = (val, min, max) => Math.max(min, Math.min(max, val))
