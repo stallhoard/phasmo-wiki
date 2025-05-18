@@ -40,4 +40,4 @@
 
 ## Ability (power)
 
-- Can teleport to a random player _anywhere_ on the map, leaving EMF 2 (33%) or 5 (67%) at the level of the targeted player's legs
+- Can teleport to a random player _anywhere_ on the map, leaving EMF 2 or 5 (33%) at the level of the targeted player's legs
