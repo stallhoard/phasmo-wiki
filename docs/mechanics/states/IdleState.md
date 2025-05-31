@@ -29,7 +29,7 @@ Once these base conditions are met, whether the hunt will start depends on ghost
 - Average insanity is `100 - averageSanity`
 - `maxRandomAbilityValue` is based on Activity level setting: Low - 130, Medium - 115, High - 100
 - `removeInteractionChanceBlock` is false by default, true if activity wish or tower card is used
-
+---
 If `totalActivityValue` is **greater than or equal** to a random roll between 0 and `maxRandomAbilityValue` AND (`50% chance` *or* `removeInteractionChanceBlock` is true), the ghost performs one of these actions (activity success):
 
 - Interaction - 45.45%
@@ -41,10 +41,8 @@ If `totalActivityValue` is **greater than or equal** to a random roll between 0 
 If the total activity check doesn’t pass, the ghost rolls another chance:
 
 - 67% (or 83.3% if Goryo)
-
- - 75% chance → [Favourite Room](FavRoomState)
-
- - 25% chance → Interaction
+  - 75% chance → [Favourite Room](FavRoomState)
+  - 25% chance → Interaction
 
 - 33% (or 16.7% if Goryo) → [WanderState](WanderState)
 
@@ -73,7 +71,7 @@ public class IdleState : MonoBehaviour
 		{
 			return;
 		}
-        if (onryoCandleBlowCounter > 2)
+        if (onryoCandleBlowCounter > 2 && !hasHuntedRecently && !delayedBySmudgeStick && !isTutorial)
         {
             ghostAI.ChangeState(GhostAI.States.hunting);
             LevelStats.abilitiesUsed += 1;
