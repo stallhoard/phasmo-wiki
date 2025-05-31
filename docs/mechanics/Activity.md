@@ -23,13 +23,5 @@ Decreases by 0.5 each second.
 ## Action probabilities
 
 Calculate ghost activity probabilities based on activity level and setting.
-::: tip REMINDER
-Activity = (100 - averageSanity) + ghost's unique modifiers + smudge modifier
-:::
 
 <Calculator />
-
-::: warning NOTE
-- For every ghost except Goryo/Shade
-- Tower card/Activity wish is not considered
-:::
