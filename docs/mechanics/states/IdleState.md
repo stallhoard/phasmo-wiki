@@ -1,5 +1,5 @@
 ## Overview
-Idle state is a fundamental state in the game. It allows the ghost to transition to other states, it's some sort of a 'bridge'.
+Idle state is a fundamental state in the game. It allows the ghost to transition to other states, it's some sort of a 'bridge'
 
 ## Mechanics
 - Ghosts in idle state can't do anything, they just stand still, and wait 2.0 - 6.0 seconds before exiting it
@@ -21,13 +21,25 @@ The ghost can attempt to start a hunt if all of the following are true:
 
 Once these base conditions are met, whether the hunt will start depends on ghost type and sanity thresholds:
 - If the ghost is a Thaye and the player is **under** (<, not <=) `75 - 6 * age` % sanity, roll *fixed* 25% chance
-- Otherwise, if the `average sanity` - `hunting multiplier` is between `25 (exclusive)` and `50 (inclusive)`, roll `20%` chance
-- Else if `average sanity` - `hunting multiplier` is less than 25, roll `1/3` chance
+- Otherwise, if the `averageSanity` - `huntingMultiplier` is between `25 (exclusive)` and `50 (inclusive)`, roll `20%` chance
+- Else if `averageSanity` - `huntingMultiplier` is less than 25, roll `1/3` chance
+
+`huntingMultiplier` is based on ghost type:
+- Demon: +20
+- Yokai: +30 (if talking)
+- Shade: -15
+- Deogen: -10
+- Raiju: +15 (if nearby electronics)
+- Onryo: +10 (default), -10 (near flame)
+- Mare: +10 (in a dark room), -10 (in a lit room)
+
+Others have 0.
+
 
 ## Activity check
-- First, calculate `totalActivityValue`, it's sum of `averageInsanity` + `OniMultiplier` + `YokaiMultiplier` + `IncenseMultiplier`
+- First, calculate `totalActivityValue`, it's sum of `averageInsanity` + `SoloMultiplier` + `OniMultiplier` + `YokaiMultiplier` + `IncenseMultiplier` (more: [Activity](/mechanics/Activity.md))
 - Average insanity is `100 - averageSanity`
-- `maxRandomAbilityValue` is based on Activity level setting: Low - 130, Medium - 115, High - 100
+- `maxRandomAbilityValue` is based on `Activity level` setting: Low - 130, Medium - 115, High - 100
 - `removeInteractionChanceBlock` is false by default, true if activity wish or tower card is used
 ---
 If `totalActivityValue` is **greater than or equal** to a random roll between 0 and `maxRandomAbilityValue` AND (`50% chance` *or* `removeInteractionChanceBlock` is true), the ghost performs one of these actions (activity success):
@@ -40,7 +52,7 @@ If `totalActivityValue` is **greater than or equal** to a random roll between 0 
 
 If the total activity check doesn’t pass, the ghost rolls another chance:
 
-- 67% (or 83.3% if Goryo)
+- 67% (or 83.3% if Goryo):
   - 75% chance → [Favourite Room](FavRoomState)
   - 25% chance → Interaction
 
