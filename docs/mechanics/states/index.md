@@ -16,15 +16,20 @@ Ghosts in Phasmophobia have different states. A state is a phase that determines
 
 ## Other states
 - Door
+- Door Knock (not used)
 - [Light](LightState)
+- [LightFlicker](LightFlickerState)
 - [Throwing](ThrowingState)
+- [DOTS](DOTSState)
+- [TeleportObject](TeleportObjectState)
 - [Ignite](IgniteState)
-- Sink
 - CCTV
 - Car Alarm
-- Radio
-- [Painting](PaintingState)
-- [Mannequin](MannequinState)
 - Window Knock
+- Mannequin
+- Interact
+- SummoningCircle
+- MusicBox
+- Salt
 
 and other ones..
