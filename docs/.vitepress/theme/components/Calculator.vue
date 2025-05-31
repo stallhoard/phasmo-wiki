@@ -4,7 +4,7 @@
 
     <div class="input-group">
       <label>
-        Activity:
+        Sanity:
         <input v-model.number="activity" type="number" />
       </label>
       <label>
@@ -30,6 +30,21 @@
         <input v-model="isOniYokai" type="checkbox" class="custom-checkbox" />
         <span class="checkbox-custom"></span>
       </label>
+      <label class="checkbox-label">
+        Shade
+        <input v-model="isShade" type="checkbox" class="custom-checkbox" />
+        <span class="checkbox-custom"></span>
+      </label>
+        <label class="checkbox-label">
+        Goryo
+        <input v-model="isGoryo" type="checkbox" class="custom-checkbox" />
+        <span class="checkbox-custom"></span>
+      </label>
+      <label class="checkbox-label">
+        Activity Wish/Tower Card
+        <input v-model="isActivityWish" type="checkbox" class="custom-checkbox" />
+        <span class="checkbox-custom"></span>
+      </label>
     </div>
 
     <button @click="calculate">Calculate</button>
@@ -48,11 +63,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-const activity = ref(5)
-const activitySettingPreset = ref('Medium')
+const activity = ref(100)
+const activitySettingPreset = ref('Low')
 const isBloodMoon = ref(false)
 const isSolo = ref(false)
-const isOniYokai = ref(false) // New reactive variable for Oni/Yokai modifier
+const isOniYokai = ref(false)
+const isShade = ref(false)
+const isGoryo = ref(false)
+const isActivityWish = ref(false) // New reactive variable for Activity Wish/Tower Card
 
 const x = ref(0)
 const interact = ref(0)
@@ -72,38 +90,50 @@ const activitySetting = computed(() => {
   if (isBloodMoon.value) {
     value -= 15
   }
+  if (isShade.value) {
+    value *= 1.5
+  }
   return value
 })
 
 const effectiveActivity = computed(() => {
-  let value = activity.value
+  let value = 100 - activity.value // Subtract Sanity from 100
   if (isSolo.value) {
     value += 15
   }
   if (isOniYokai.value) {
     value += 30
   }
-  return clamp(value, 1, 100) // Clamp activity to max 100
+  return clamp(value, 1, 99) // Clamp to ensure valid range
 })
 
 const clamp = (val, min, max) => Math.max(min, Math.min(max, val))
 
 const calculate = () => {
-  let xVal = ((effectiveActivity.value + 1) / activitySetting.value) * 0.5
-  xVal = clamp(xVal, 0.005, 0.5)
-
+  let xVal = (effectiveActivity.value + 1) / activitySetting.value
+  if (!isActivityWish.value) {
+    xVal *= 0.5 // Apply 0.5 multiplier only if Activity Wish/Tower Card is not checked
+  }
+  xVal = Math.min(xVal, 1)
   x.value = xVal
+  if (!isGoryo.value) {
   interact.value = xVal * (5 / 11) + (1 - xVal) * (1 / 6)
   wander.value = xVal * (2 / 11) + (1 - xVal) * (1 / 3)
   ghostAbility.value = xVal * (4 / 11)
   favRoom.value = (1 - xVal) * (1 / 2)
+  }
+  else {
+  interact.value = xVal * (5 / 11) + (1 - xVal) * (5 / 24)
+  wander.value = xVal * (2 / 11) + (1 - xVal) * (1 / 6)
+  ghostAbility.value = xVal * (4 / 11)
+  favRoom.value = (1 - xVal) * 0.625
+  }
 
   calculated.value = true
 }
 </script>
 
 <style scoped>
-/* No changes needed in the styles */
 .calculator {
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
