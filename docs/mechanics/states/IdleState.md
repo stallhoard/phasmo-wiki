@@ -20,7 +20,7 @@ The ghost can attempt to start a hunt if all of the following are true:
 - The hunt is not under smudge timer
 
 Once these base conditions are met, whether the hunt will start depends on ghost type and sanity thresholds:
-- If the ghost is a Thaye and the player is **under** (<, not <=) `75 - 6 * age` % sanity, roll *fixed* 25% chance
+- If the ghost is a Thaye and the player is **under** (<, not <=) `75 - 6 * age` % sanity, roll `25%` chance
 - Otherwise, if the `averageSanity` - `huntingMultiplier` is between `25 (exclusive)` and `50 (inclusive)`, roll `20%` chance
 - Else if `averageSanity` - `huntingMultiplier` is less than 25, roll `1/3` chance
 
