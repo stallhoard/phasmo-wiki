@@ -111,10 +111,10 @@ const clamp = (val, min, max) => Math.max(min, Math.min(max, val))
 
 const calculate = () => {
   let xVal = (effectiveActivity.value + 1) / activitySetting.value
+  xVal = Math.min(xVal, 1)
   if (!isActivityWish.value) {
     xVal *= 0.5 // Apply 0.5 multiplier only if Activity Wish/Tower Card is not checked
   }
-  xVal = Math.min(xVal, 1)
   x.value = xVal
   if (!isGoryo.value) {
   interact.value = xVal * (5 / 11) + (1 - xVal) * (1 / 6)
