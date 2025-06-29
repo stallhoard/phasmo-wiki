@@ -38,5 +38,9 @@
 }
 </style>
 
-## Mechanics
-- The only ghost that is able to do **double touch** with almost no delay and close door fully
+## Ability
+- The only ghost that is able to gently close a randomly chosen **opened** door without new shutting sound
+- Can't **slightly** move a door, only full close/open
+
+## Weakness
+- Wander is replaced by Favourite room state if under the effect of incense for 90 seconds
