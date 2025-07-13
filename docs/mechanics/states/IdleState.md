@@ -53,7 +53,9 @@ If `totalActivityValue` is **greater than or equal** to a random roll between 0 
 If the total activity check doesn’t pass, the ghost rolls another chance:
 
 - 67% (or 83.3% if Goryo):
-  - 75% chance → [Favourite Room](FavRoomState)
+  - 75% chance
+     - 90% [Favourite Room](FavRoomState)
+     - 10% ([DOTS State](/mechanics/states/DOTSState.md))
   - 25% chance → Interaction
 
 - 33% (or 16.7% if Goryo) → [WanderState](WanderState)
@@ -143,7 +145,12 @@ public class IdleState : MonoBehaviour
             {
                 if (Random.Range(0, 4) != 1) // 75% chance
                 {
-                    ghostAI.ChangeState(GhostAI.State.favouriteRoom);
+                    if (ghostType == Goryo && Random.value < 0.1f) // 10% Goryo
+                    {
+                        ghostAI.ChangeState(GhostAI.State.dots);
+                        return;
+                    }
+                    ghostAI.ChangeState(GhostAI.State.favouriteRoom); // 90% Goryo, 100% otherwise
                     return;
                 }                                                                    
                 else

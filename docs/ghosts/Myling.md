@@ -40,7 +40,7 @@
 
 ## Hunting state
 - Completely silent if at the distance greater than 12m from the ghost
-- Quieter in general
+- Quieter in general because of the fade off
 
 ## Whispers
-- Every 15 - 30 seconds there is a 50% chance to get a ghost whisper
+- Produces paranormal sounds every `64 - 127` seconds

@@ -22,6 +22,6 @@ Decreases by 0.5 each second.
 
 ## Action probabilities
 
-Calculate ghost activity probabilities based on activity level and setting.
+Calculate ghost activity probabilities based on activity level and setting. **OUTDATED. IN PROGRESS**
 
 <Calculator />
