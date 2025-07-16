@@ -48,8 +48,8 @@
 ## Ghost event preferences
 
 - Can't do singing events, appear state
-- 60% chance to choose airball
-- 2/3 (67%) chance to enter shadow form if manifested
+- `60%` chance to choose airball as an event, `80%` if forced by The Devil
+- `2/3 (66.7%)` chance to enter shadow form **if manifested**
 
 ## Cursed possesions manifestation
-- 50% chance to appear in shadow form during MusicBox/SummonningCircle/MonkeyPaw State
+- `50%` chance to appear in shadow form during `Music Box`, `Summoning Circle` states

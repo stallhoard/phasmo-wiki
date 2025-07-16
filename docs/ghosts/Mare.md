@@ -64,7 +64,7 @@ More: [Wander State](/mechanics/states/WanderState)
 
 ## Ghost event preferences
 
-- Mare has ~13.8% chance to choose light-breaking event
+- Mare has `5/36 (~13.8%)` chance to choose light-breaking event
 
 More: [Event State](/mechanics/states/EventState)
 

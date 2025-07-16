@@ -44,5 +44,5 @@
 ## Sanity threshold
 - If the ghost is within 6/8/10 meters of active electronics (small/medium/big maps), set sanity threshold to 65%
 ::: danger BUG
-This currently works only with active head gear or active *shoulder* flashlight
+This currently works only with active head gear, active *shoulder* flashlight, held electronics
 :::

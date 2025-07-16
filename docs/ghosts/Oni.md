@@ -44,5 +44,5 @@
 More: [Activity](/mechanics/Activity.md)
 
 ## Ghost event preferences
-- 50% chance to do walking events, 60% if forced by The Devil
-- 2/3 (67%) chance to full form
+- `50%` chance to do walking events, `60%` if forced by The Devil
+- `2/3 (66.7%)` chance to appear in full form during events
