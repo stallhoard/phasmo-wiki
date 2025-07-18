@@ -164,9 +164,9 @@ const calculate = () => {
   }
 
   const ghostAbility = xVal * (4 / 11)
-  fuseBox.value = ghostAbility * ratios.fuseBox
-  power.value = ghostAbility * ratios.power
-  event.value = ghostAbility * ratios.event
+  fuseBox.value = ghostAbility * ratio.fuseBox
+  power.value = ghostAbility * ratio.power
+  event.value = ghostAbility * ratio.event
 
   calculated.value = true
 }
