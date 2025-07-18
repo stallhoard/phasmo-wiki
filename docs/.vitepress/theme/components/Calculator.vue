@@ -159,7 +159,7 @@ const calculate = () => {
   else {
   interact.value = xVal * (5 / 11) + (1 - xVal) * (5 / 24)
   wander.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 6)) * (1 / 3)
-  dots.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 3)) * (2 / 3) + (1 - xVal) * 0.0625
+  dots.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 6)) * (2 / 3) + (1 - xVal) * 0.0625
   favRoom.value = (1 - xVal) * 0.5625
   }
 
