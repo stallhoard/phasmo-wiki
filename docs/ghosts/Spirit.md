@@ -37,6 +37,7 @@
   transform: scale(1.02);
 }
 </style>
+
 ## Tell
 Can't enter [Hunting State](/mechanics/states/HuntingState.md) 180 seconds under incense effect
 
