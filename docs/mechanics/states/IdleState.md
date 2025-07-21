@@ -54,8 +54,8 @@ If the total activity check doesn’t pass, the ghost rolls another chance:
 
 - 67% (or 83.3% if Goryo):
   - 75% chance
-     - 90% [Favourite Room](FavRoomState)
-     - 10% ([DOTS State](/mechanics/states/DOTSState.md))
+     - 90% [Favourite Room](FavRoomState), if the ghost isn't a Goryo, 100% instead
+     - 10% ([DOTS State](/mechanics/states/DOTSState.md)), if the ghost is a Goryo
   - 25% chance → Interaction
 
 - 33% (or 16.7% if Goryo) → [WanderState](WanderState)

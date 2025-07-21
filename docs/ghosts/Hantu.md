@@ -37,3 +37,6 @@
   transform: scale(1.02);
 }
 </style>
+
+## Mechanics
+- 2x more chance to enter [Fuse Box](/states/FuseBoxState.md)

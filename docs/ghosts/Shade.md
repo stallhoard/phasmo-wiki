@@ -48,7 +48,7 @@
 ## Ghost event preferences
 
 - Can't do singing events, appear state
-- `60%` chance to choose airball as an event, `80%` if forced by The Devil
+- `60%` chance to choose airball as an event
 - `2/3 (66.7%)` chance to enter shadow form **if manifested**
 
 ## Cursed possesions manifestation

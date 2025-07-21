@@ -39,7 +39,7 @@
 </style>
 
 ## Ability (pseudo)
-- Every third blown out flame guarantees a hunt after exiting [Idle State](/mechanics/states/IdleState.md)
+- Every third (>2) blown out flame guarantees a hunt attempt after exiting [Idle State](/mechanics/states/IdleState.md)
 
 ## Mechanics
 - Flames prevent hunt attempts in 4m range

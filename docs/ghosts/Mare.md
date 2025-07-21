@@ -50,8 +50,9 @@
 ## Interactions
 
 - Can't turn on a light naturally
+- Can't flicker a light (the one that causes EMF)
 
-::: danger BUG
+::: danger BUG?
 Can't turn on TVs and computer monitors
 :::
 
@@ -64,7 +65,7 @@ More: [Wander State](/mechanics/states/WanderState)
 
 ## Ghost event preferences
 
-- Mare has `5/36 (~13.8%)` chance to choose light-breaking event
+- Mare has `5/36 (~13.8%)` chance to choose light-breaking event (`66.7%` more frequent than other ghosts)
 
 More: [Event State](/mechanics/states/EventState)
 
