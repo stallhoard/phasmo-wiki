@@ -15,6 +15,14 @@
           <option value="Low">Low</option>
         </select>
       </label>
+      <label>
+       Ghost Event Setting:
+        <select v-model="ghostEventSettingPreset">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </label>
       <label class="checkbox-label">
         Blood Moon
         <input v-model="isBloodMoon" type="checkbox" class="custom-checkbox" />
@@ -53,8 +61,11 @@
       <ul>
         <li><strong>Interact Chance:</strong> {{ (interact * 100).toFixed(2) }}%</li>
         <li><strong>Wander Chance:</strong> {{ (wander * 100).toFixed(2) }}%</li>
-        <li><strong>Ghost Ability Chance:</strong> {{ (ghostAbility * 100).toFixed(2) }}%</li>
+        <li><strong>Fuse Box Chance:</strong> {{ (fuseBox * 100).toFixed(2) }}%</li>
+        <li><strong>Power Chance:</strong> {{ (power * 100).toFixed(2) }}%</li>
+        <li><strong>Event Chance:</strong> {{ (event * 100).toFixed(2) }}%</li>
         <li><strong>Favourite Room Chance:</strong> {{ (favRoom * 100).toFixed(2) }}%</li>
+        <li><strong>DOTS Chance:</strong> {{ (dots * 100).toFixed(2) }}%</li>
       </ul>
     </div>
   </div>
@@ -63,8 +74,9 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-const activity = ref(100)
+const activity = ref(0)
 const activitySettingPreset = ref('Low')
+const ghostEventSettingPreset = ref('Low')
 const isBloodMoon = ref(false)
 const isSolo = ref(false)
 const isOniYokai = ref(false)
@@ -75,7 +87,10 @@ const isActivityWish = ref(false) // New reactive variable for Activity Wish/Tow
 const x = ref(0)
 const interact = ref(0)
 const wander = ref(0)
-const ghostAbility = ref(0)
+const dots = ref(0)
+const fuseBox = ref(0)
+const power = ref(0)
+const event = ref(0)
 const favRoom = ref(0)
 const calculated = ref(false)
 
@@ -83,6 +98,24 @@ const presetValues = {
   High: 100,
   Medium: 115,
   Low: 130
+}
+
+const ghostAbilityRatios = {
+  Low: {
+    fuseBox: 17/144,
+    power: 17/36,
+    event: 59/144
+  },
+  Medium: {
+    fuseBox: 1/12,
+    power: 1/3,
+    event: 7/12
+  },
+  High: {
+    fuseBox: 7/144,
+    power: 28/144,
+    event: 109/144
+  }
 }
 
 const activitySetting = computed(() => {
@@ -115,19 +148,25 @@ const calculate = () => {
   if (!isActivityWish.value) {
     xVal *= 0.5 // Apply 0.5 multiplier only if Activity Wish/Tower Card is not checked
   }
+  const ratio = ghostAbilityRatios[ghostEventSettingPreset.value]
   x.value = xVal
   if (!isGoryo.value) {
   interact.value = xVal * (5 / 11) + (1 - xVal) * (1 / 6)
-  wander.value = xVal * (2 / 11) + (1 - xVal) * (1 / 3)
-  ghostAbility.value = xVal * (4 / 11)
+  wander.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 3)) * (2 / 3)
+  dots.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 3)) * (1 / 3)
   favRoom.value = (1 - xVal) * (1 / 2)
   }
   else {
   interact.value = xVal * (5 / 11) + (1 - xVal) * (5 / 24)
-  wander.value = xVal * (2 / 11) + (1 - xVal) * (1 / 6)
-  ghostAbility.value = xVal * (4 / 11)
-  favRoom.value = (1 - xVal) * 0.625
+  wander.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 6)) * (1 / 3)
+  dots.value = (xVal * (2 / 11) + (1 - xVal) * (1 / 6)) * (2 / 3) + (1 - xVal) * 0.0625
+  favRoom.value = (1 - xVal) * 0.5625
   }
+
+  const ghostAbility = xVal * (4 / 11)
+  fuseBox.value = ghostAbility * ratio.fuseBox
+  power.value = ghostAbility * ratio.power
+  event.value = ghostAbility * ratio.event
 
   calculated.value = true
 }

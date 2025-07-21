@@ -22,6 +22,11 @@ Decreases by 0.5 each second.
 
 ## Action probabilities
 
-Calculate ghost activity probabilities based on activity level and setting. **OUTDATED. IN PROGRESS**
+Calculate ghost activity probabilities based on activity level and setting.
+::: tip NOTE
+If playing with no evidence, or DOTS isn't an evidence, add `DOTS Chance` to `Wander Chance`
+
+Blood Moon affects Fuse Box, Power and Event chances, but it will be added soon
+:::
 
 <Calculator />
