@@ -46,7 +46,7 @@ Everytime the ghost tries to interact there is:
 
 ## Hunt
 - 50% chance to start a hunt from current location, 1.5m/s speed
-- 50% chance to start a hunt from last extended interaction place (random point in 2m radius sphere), 1.9m/s speed
+- 50% chance to start a hunt from last extended interaction place (closest valid NavMesh point in 2m radius sphere), 1.9m/s speed
 
 ## Extended interaction range
 - 12m x 12m interaction box with the ghost in the center on small/medium maps

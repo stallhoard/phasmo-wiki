@@ -39,7 +39,7 @@
 </style>
 
 ## Ability (pseudo)
-- Attempts aging every 60 - 120 seconds, the timer is **always 60 seconds** at the start of the game
+- Attempts to age every 60 - 120 seconds, the timer is **always 60 seconds** at the start of the game
 - Aging decreases ghost activity, event chances, hunt threshold, speed
 
 ## Speed
