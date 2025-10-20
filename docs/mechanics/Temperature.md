@@ -1,34 +1,34 @@
 ## Weather
-- Ambient temperature values:
-  - Sunrise: 16°C
-  - Clear: 13°C
-  - Fog: 13°C
-  - Blood Moon: 13°C
-  - Windy: 8°C
-  - Light Rain: 8°C
-  - Heavy Rain: 8°C
-  - Snow: 5°C
-
-## Thermometer fluctuation
-The thermometer can't display values lower than the actual temperature:
-- Tier 1 fluctuates by maximum of +2°C
-- Tier 2 fluctuates by maximum of +3°C
-- Tier 2 fluctuates by maximum of +2°C
-
-## Temperature drop
-- Temperature drops by 0.1°C per second when the ghost is in the room
-- Once the room temperature reaches or falls below:
-  - 10°C for Sunrise weather
-  - 8°C for Fog, Clear and Blood Moon weather types
-  - 5°C for Windy, Light Rain and Heavy Rain weather types
-  - 3°C for Snow weather
-the rate slows to 0.033°C per second
-
-## Temperature rise
-- If there is no ghost presence in the ghost room, the temperature of the room will warm up at a rate of 0.033°C per second, rising to the ambient temperature if the fuse box is off or broken, or up to 20°C otherwise (indoor spaces only)
+- Ambient temperature values (max and min):
+  - Sunrise: 16°C | 10°C
+  - Clear: 13°C | 10°C
+  - Fog: 13°C | 10°C
+  - Blood Moon: 13°C | 10°C
+  - Windy: 8°C | 5°C
+  - Light Rain: 8°C | 5°C
+  - Heavy Rain: 8°C | 5°C
+  - Snow: 5°C | 3°C
 
 ## Initial temperature
-- if the fuse box is on from the start of the game (in difficulty settings), all indoor spaces start at 20°C
-- If the fuse box is off or broken from the start of the game, all rooms begin at the ambient temperature
+- If the fuse box is on from the start of the game (in difficulty settings), all indoor spaces start at 20°C
+- If the fuse box is off or broken from the start of the game, all rooms begin at the **max** ambient temperature
+
+## Temperature rise (no ghost presence)
+- Fuse box on:
+    - Raises by 0.025°C per second until 20°C
+- Fuse box off:
+    - If the room temperature is lower than the **min** ambient temperature, raises by 0.025°C per second until **min** ambient temperature
+- Outdoor space:
+    - Raises by 0.025°C per second until **max** ambient temperature
+
+## Temperature drop
+- Ghost presence:
+    - Drops by 0.1°C per second when the ghost is in the room
+      - Once the room temperature reaches or falls below **min** ambient temperature value, the rate slows to **0.033°C per second**
+- Ambient (no ghost presence):
+    - If the fuse box is off or an outdoor space, drops by 0.1°C per second until **max** ambient temperature
+ 
+## No temperature change
+- If indoor space, fuse box is off AND **min** ambient temperature < room temperature < **max** ambient temperature
 
 
