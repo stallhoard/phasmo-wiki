@@ -1,6 +1,6 @@
 ## Mechanics
 - All fire sources have their own *individual* timer
-- Timer starts from the ignition (activation) of the flame
+- Timer starts from the ignition (activation) of the flame [^1]
 
 ## Timer
 - **Always** `30` seconds for each fire source at the start of the game
@@ -24,3 +24,4 @@
 Tier 3 Firelight does **not** reset the timer if extinguished by a player
 :::
 
+[^1] - Timer for igniters starts each time (resets too) you put it in your pocket or when you cycle, that means 30 second rule cannot be applied
