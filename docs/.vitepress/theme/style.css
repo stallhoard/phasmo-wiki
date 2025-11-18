@@ -1,169 +1,155 @@
 :root {
-  --vp-c-bg: #000000;
-  --vp-c-text: #ffffff;
-  --vp-c-brand: #bd34fe;
-  --vp-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto,
-    sans-serif;
+  --vp-c-bg: #0f172a;
+  --vp-c-bg-soft: #1e293b;
+  --vp-c-bg-mute: #334155;
+  --vp-c-divider: #334155;
+  --vp-c-text: #f8fafc;
+  --vp-c-text-1: #f8fafc;
+  --vp-c-text-2: #cbd5e1;
+  --vp-c-text-3: #94a3b8;
+  --vp-c-brand: #a855f7;
+  --vp-c-brand-light: #c084fc;
+  --vp-c-brand-dark: #9333ea;
+  --vp-c-brand-soft: rgba(168, 85, 247, 0.14);
+  --vp-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 :root.dark {
-  --vp-c-bg: #000000;
-  --vp-c-text: #ffffff;
+  --vp-c-bg: #020617;
+  --vp-c-bg-soft: #0f172a;
 }
 
-:root:not(.dark) {
-  --vp-c-bg: #ffffff;
-  --vp-c-text: #213547;
+body {
+  background-color: var(--vp-c-bg);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(168, 85, 247, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.08), transparent 25%);
+  background-attachment: fixed;
 }
 
 .VPNav,
-.VPNavBar,
-.VPNavBar.has-sidebar .content {
-  background: var(--vp-c-bg) !important;
-  border: none !important;
-}
-
-.VPHome .VPContent {
-  background: radial-gradient(
-      circle at top right,
-      rgba(189, 52, 254, 0.1),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at bottom left,
-      rgba(33, 216, 254, 0.1),
-      transparent 60%
-    );
+.VPNavBar {
+  background-color: rgba(15, 23, 42, 0.7) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 .VPSidebar {
-  background: var(--vp-c-bg) !important;
-  border: none !important;
+  background-color: rgba(15, 23, 42, 0.7) !important;
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-.VPSidebar .curtain {
-  display: none !important;
+.VPHome .VPContent {
+  background: transparent;
 }
 
-.VPHome {
-  padding: 0 !important;
+/* Card Styles */
+.VPFeatures .VPFeature {
+  background: rgba(30, 41, 59, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 16px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.VPNav {
-  background: var(--vp-c-bg) !important;
-  border: none !important;
+.VPFeatures .VPFeature:hover {
+  transform: translateY(-4px);
+  background: rgba(30, 41, 59, 0.6) !important;
+  border-color: var(--vp-c-brand) !important;
+  box-shadow: 0 8px 24px -4px rgba(168, 85, 247, 0.2);
 }
 
-.VPHome .VPNav {
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
 }
 
-.dark .VPHome .VPNav {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+.VPHomeHero .name, .VPHomeHero .text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right bottom, #fff, #94a3b8);
 }
 
-:root:not(.dark) .VPHome .VPNav {
-  background: rgba(0, 0, 0, 0.1) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+.VPHomeHero .name {
+  background-image: linear-gradient(to right bottom, #c084fc, #a855f7);
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-bg-mute);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* Rainbow Text Animation */
 .rainbow-text {
-  display: inline-block;
   background: linear-gradient(
     90deg,
-    #ff0000,
-    #ff9900,
-    #ffff00,
-    #00ff00,
-    #00ffff,
-    #0000ff,
-    #9900ff,
-    #ff00ff,
-    #ff0000
+    #ef4444,
+    #f97316,
+    #eab308,
+    #22c55e,
+    #06b6d4,
+    #3b82f6,
+    #a855f7,
+    #ec4899
   );
-  background-size: 3000% 100%;
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: smoothWave 5s linear infinite;
-  white-space: nowrap;
+  animation: shine 4s linear infinite;
+  font-weight: bold;
 }
 
-@keyframes smoothWave {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
+@keyframes shine {
+  to {
+    background-position: 200% center;
   }
 }
 
+/* Link Container */
 .link-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .column a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   text-decoration: none;
-  color: #4a5568;
-  font-size: 20px;
-  transition: color 0.1s ease;
-}
-
-.dark .column a {
-  color: #a0aec0;
-}
-
-.column a:hover {
-  text-decoration: underline;
-  color: var(--vp-c-brand);
-}
-
-.VPFeatures .VPFeature {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: var(--vp-c-text-1);
   transition: all 0.2s ease;
 }
 
-.VPFeatures .VPFeature:hover {
-  background: rgba(189, 52, 254, 0.1) !important;
-  border-color: rgba(189, 52, 254, 0.3) !important;
-}
-
-.dark .VPFeatures .VPFeature {
-  background: rgba(0, 0, 0, 0.5) !important;
-}
-
-:root:not(.dark) .VPFeatures .VPFeature {
-  background: rgba(0, 0, 0, 0.05) !important;
-  border-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-:root:not(.dark) .VPFeatures .VPFeature:hover {
-  background: rgba(189, 52, 254, 0.05) !important;
-  border-color: rgba(189, 52, 254, 0.2) !important;
-}
-
-.center {
-  text-align: center;
-}
-
-/* Center h1 only on non-home pages */
-.VPContent:not(.is-home) h2 {
-  text-align: center;
-}
-
-/* Reset h1 alignment for home page */
-.VPContent.is-home h2 {
-  text-align: left;
+.column a:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: var(--vp-c-brand);
+  transform: translateX(4px);
+  color: var(--vp-c-brand-light);
 }
